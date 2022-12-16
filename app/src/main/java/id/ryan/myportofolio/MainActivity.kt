@@ -1,7 +1,6 @@
 package id.ryan.myportofolio
 
 import android.content.Intent
-import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -24,7 +23,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 		list.addAll(PortofoliosData.listData)
 		showRecyclerList()
 		
-		imgProfile = findViewById(R.id.img_profile)
+		imgProfile = findViewById(R.id.about_page)
 		imgProfile.setOnClickListener(this)
 		
 	}
@@ -37,7 +36,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 	
 	override fun onClick(v: View?) {
 		when(v?.id){
-			R.id.img_profile -> {
+			R.id.about_page -> {
 				val intent = Intent(this@MainActivity, ProfileActivity::class.java)
 				startActivity(intent)
 			}

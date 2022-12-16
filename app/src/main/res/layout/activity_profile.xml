@@ -41,6 +41,21 @@
         android:layout_marginBottom="20dp"/>
 
     <TextView
+        style="@style/Text.Medium"
+        android:text="@string/name"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"/>
+
+    <TextView
+        style="@style/Text.Regular"
+        android:text="@string/software_engineer"
+        android:textSize="12sp"
+        android:textColor="@color/secondary"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"/>
+
+    <TextView
         style="@style/Text.ExtraBold"
         android:text="@string/about_me"
         android:textSize="30sp"
