@@ -26,8 +26,7 @@ class ProfileActivity : AppCompatActivity(), View.OnClickListener {
 	override fun onClick(v: View?) {
 		when (v?.id) {
 			R.id.btn_back -> {
-				val intent = Intent(this@ProfileActivity, MainActivity::class.java)
-				startActivity(intent)
+				finish()
 			}
 			R.id.button -> {
 				val uri = Uri.parse("https://www.linkedin.com/in/ryan-aprianto-04b83212b/")

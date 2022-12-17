@@ -32,6 +32,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 		rvMyWorks.layoutManager = LinearLayoutManager(this)
 		val listPortofolioAdapter = PortofolioAdapter(list)
 		rvMyWorks.adapter = listPortofolioAdapter
+		
+		listPortofolioAdapter.setOnItemClickCallback(object : PortofolioAdapter.OnItemClickCallback {
+			override fun onItemClick(data: Portofolio) {
+				showSelectedHero(data)
+			}
+		})
 	}
 	
 	override fun onClick(v: View?) {
@@ -41,5 +47,13 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 				startActivity(intent)
 			}
 		}
+	}
+	
+	private fun showSelectedHero(portofolio: Portofolio) {
+		val intent = Intent(this@MainActivity, DetailActivity::class.java)
+		intent.putExtra(DetailActivity.TITLE, portofolio.title)
+		intent.putExtra(DetailActivity.DESCRIPTION, portofolio.description)
+		intent.putExtra(DetailActivity.PHOTO, portofolio.photo)
+		startActivity(intent)
 	}
 }

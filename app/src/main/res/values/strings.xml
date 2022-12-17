@@ -9,4 +9,8 @@
     <string name="bio"><![CDATA[I am a Programmer with 3 years of work experience.\n\nFamiliar with:\n- Codeigniter\n- Laravel\n- Node Js (Express js)\n- React (React.js, React Native & Next.js)]]></string>
     <string name="let_s_connect">Let\'s Connect</string>
     <string name="linkedin">LinkedIn</string>
+    <string name="email">Ryan.Aprianto77777@gmail.com</string>
+    <string name="thumbnail">Thumbnail</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
 </resources>

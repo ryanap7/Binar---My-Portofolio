@@ -33,6 +33,8 @@ class PortofolioAdapter(private val listPortofolio: ArrayList<Portofolio>) :
 			.load(portofolio.photo)
 			.apply(RequestOptions().override(302, 300))
 			.into(holder.imgPhoto)
+		
+		holder.itemView.setOnClickListener { onItemClickCallback.onItemClick(listPortofolio[holder.adapterPosition]) }
 	}
 	
 	override fun getItemCount(): Int {
